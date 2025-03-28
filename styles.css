@@ -232,6 +232,7 @@ footer {
 
     /* Contenedor del hero */
     .hero-container {
+        top: 1rem;
         padding: 1rem;
     }
 
