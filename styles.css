@@ -1,0 +1,283 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ff6f61;
+}
+
+/* Secciones */
+.section {
+    padding: 6rem 1rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+video {
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Estilo general de la sección de contacto */
+#contacto {
+    background-color: #f4f4f4; /* Fondo tipo papel de regalo */
+    padding: 4rem 0; /* Ajustamos el padding vertical */
+    text-align: center; /* Centramos el contenido */
+}
+
+#contacto h2 {
+    color: #ff6f61; /* Título llamativo */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente cartoon */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Contenedor para centrar la tarjeta */
+.contact-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Altura mínima de la pantalla */
+}
+
+/* Estilo de la tarjeta de contacto */
+.contact-card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border: 4px dashed #ff6f61; /* Borde punteado llamativo */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 2rem;
+    max-width: 400px; /* Ancho máximo de la tarjeta */
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contact-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente cartoon */
+    font-size: 2rem;
+    color: #ff6f61; /* Color llamativo */
+    margin-bottom: 0.5rem;
+}
+
+.contact-description {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente cartoon */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.contact-info span {
+    font-weight: bold;
+    color: #ff6f61; /* Destacar etiquetas */
+}
+
+.contact-info a {
+    color: #0077b5; /* Color LinkedIn */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo general de la sección de inicio */
+#inicio {
+    background-color: #f4f4f4; /* Fondo amarillo suave (tipo papel de regalo) */
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border: 4px dashed #ff6f61; /* Borde punteado llamativo */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.hero-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente cartoon */
+    font-size: 3rem;
+    color: #ff6f61; /* Color llamativo */
+    margin-bottom: 1rem;
+}
+
+.hero-title .highlight {
+    color: #ffcc00; /* Resaltar tu nombre */
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-family: 'Fredoka One', cursive, sans-serif; /* Fuente moderna y divertida */
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle .highlight {
+    color: #ff6f61; /* Resaltar palabras clave */
+    font-weight: bold;
+}
+
+.hero-description {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.hero-description .highlight {
+    color: #ff6f61; /* Resaltar herramientas y habilidades */
+    font-weight: bold;
+}
+
+/* Estilo para el contenedor del video */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del video */
+    margin: 0 auto; /* Centrar el video */
+    aspect-ratio: 16 / 9; /* Mantener una proporción de aspecto de 16:9 */
+    overflow: hidden;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Eliminar bordes del iframe */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    /* Barra de navegación */
+    nav {
+        padding: 0.5rem;
+    }
+
+    .menu {
+        flex-direction: column; /* Los enlaces se apilan verticalmente */
+        gap: 1rem;
+    }
+
+    /* Secciones */
+    .section {
+        padding: 4rem 1rem 1rem; /* Reducir el padding */
+    }
+
+    /* Contenedor del hero */
+    .hero-container {
+        padding: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem; /* Reducir el tamaño del subtítulo */
+    }
+
+    /* Tarjeta de contacto */
+    .contact-card {
+        max-width: 100%; /* La tarjeta ocupa todo el ancho en móviles */
+        padding: 1rem;
+    }
+
+    .contact-title {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+    }
+
+    .contact-info p {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Video */
+    .video-container {
+        max-width: 100%; /* El video ocupa todo el ancho en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales para pantallas muy pequeñas */
+    .hero-title {
+        font-size: 1.8rem; /* Tamaño aún más pequeño */
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
